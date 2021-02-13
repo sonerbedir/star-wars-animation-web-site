@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+
+}
+
+ul, li {
+
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/**** Header ***/
+
+.header{
+
+    background:
+     linear-gradient(to right bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)),
+     url("../images/darth-vader-nawpic-14-scaled-e1607894795121.jpg")no-repeat top center ;
+    height: 100vh;
+}
+
+.header-top{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items:center;
+}
+
+
+.header-top .menu ul li{
+
+        display: inline-block;
+}
+
+.fab, .fa-jedi-order{
+
+    font-size: 7em;
+    color: #fff;
+    
+    
+}
+
+.header-top .menu a {
+
+    display: block;
+    color:#fff;
+    padding: 15px 20px;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    transition: 300 ms all;
+    
+}
+
+.header-top .menu a:hover {
+
+    color:antiquewhite;
+    box-shadow: 0 10px 20px rgba(38, 91, 165, 0.5);
+}
+.header-top .menu a:active{
+
+    box-shadow: 0 5px 10px rgba(38, 91, 165, 0.5);
+}
+
+.header-content{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content .header-content-heading{
+
+    color:#fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+}
+.header-content .header-content-heading h1 {
+
+    font-size: 48px;
+    letter-spacing: 0.05rem;
+}
+.header-content .header-content-heading p {
+
+    letter-spacing: 0.05rem;
+    font-size: 18px;
+}
+.btn{
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content .header-content-heading a{
+
+   display: block;
+   width: 120px;
+   height: 50px;
+   background: #fff;
+   text-align: center;
+   line-height: 50px;
+   color: #000;
+   margin-top: 20px;
+   border-radius: 50px;
+   transition: 300ms all;
+}
+
+.header-content .header-content-heading a:hover{
+
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(38, 91, 165, 0.8);
+}
+.header-content .header-content-heading a:active{
+
+    transform: translateY(1px);
+    box-shadow: 0 5px 10px rgba(38, 91, 165, 0.5);
+}
+
+.right-animation{
+    animation: moveInRight 1000ms;
+}
+
+.top-animation{
+    animation: moveInTop 1000ms;
+}
+
+.bottom-animation{
+
+    animation: moveInBottom 1000ms;
+}
+
+@keyframes moveInRight {
+
+    0%{
+
+        transform: translateX(100px);
+        opacity:0;
+    }
+    
+    75%{
+
+        transform: translateX(20px);
+    }
+    100%{
+
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveInTop {
+
+    0%{
+
+        transform: translateY(-100px);
+        opacity:0;
+    }
+    
+    75%{
+
+        transform: translateY(-20px);
+    }
+    100%{
+
+        transform: translateY(0px);
+    }
+}
+
+@keyframes moveInBottom {
+
+    0%{
+
+        transform: translateY(100px);
+        opacity:0;
+    }
+    
+    75%{
+
+        transform: translateY(20px);
+    }
+    100%{
+
+        transform: translateY(0px);
+    }
+}
